@@ -6,12 +6,12 @@
 	<script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
 	<script type="text/javascript">
 
-		$(document).ready(function () { // AGREGADO 
-			$('p, h3, li').hover(function(){ // FALTABA EL FUNCTION 
+		$(document).ready(function () { // DOCUMENT AGREGADO //
+			$('p, h3, li').hover(function(){ // FALTABA EL FUNCTION //
 				$(this).css('color', 'white');
 			}, function() {
 				$(this).css('color', 'black');
-			};
+			});
 
 			$('a').click(function () {
 				alert("we don't actually serve pizza...");
@@ -22,11 +22,11 @@
 			}); // ERROR N° 1 // 
 
 			$('h5').click(function () {
-				$('img').slideDown(); // ESPACIO REMOVIDO 
+				$('img').slideDown(); // ESPACIO REMOVIDO //
 			});
 
 			$('button').click(function(){
-				var result = $('input:checked').val(); // VALUE ES VAL
+				var result = $('input:checked').val(); // VALUE ES VAL //
 				alert("Thank you for your input, we like " + result + " too!");
 			});
 
